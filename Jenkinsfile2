@@ -5,7 +5,7 @@ pipeline {
     }
     stages{stage('sonarqubescan'){
             steps{
-                sh 'mvn sonar:sonar'
+                sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=kinjnr77_week16-code'
             }
         }
 
