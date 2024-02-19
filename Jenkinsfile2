@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('sonarqube scan') {
             agent {
-                docker {
+                 
                     image 'any'
                 }
             }
@@ -28,4 +28,4 @@ pipeline {
             }
         }
     }
-}
+
