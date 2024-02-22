@@ -8,8 +8,7 @@ pipeline {
             agent {docker { image 'maven:3-amazoncorretto-17-debian' }} 
              steps{
                 withSonarqubeEnv('sonarserver'){
-                sh '
-              sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=kserge2001_week16-code' 
+                sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=kinjnr77_week16-code' 
             }
             } 
         }  
