@@ -34,7 +34,7 @@ pipeline {
         }
         stage('push image'){
             steps{
-                sh 'docker tag geoapp:latest 682206937316.dkr.ecr.us-east-1.amazonaws.com/geoapp:latest'
+                sh 'docker tag geoapp:latest 682206937316.dkr.ecr.us-east-1.amazonaws.com/devops:latest'
                 sh 'docker push 682206937316.dkr.ecr.us-east-1.amazonaws.com/devops:latest'
             }
         }      
